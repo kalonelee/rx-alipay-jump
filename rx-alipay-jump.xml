@@ -4,6 +4,7 @@
 			<action name="android.intent.action.VIEW" />
 			<scheme name="alipays" />
 			<cat name="android.intent.category.BROWSABLE" />
+			<ssp sglob="//platformapi/startapp?.*qrcode.*" />
 		</intent-filter>
 	</prescription>
   
