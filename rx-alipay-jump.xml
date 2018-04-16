@@ -4,6 +4,11 @@
     <scheme name="alipays" />
     <ssp prefix="//platformapi/startapp?.*qrcode.*" />
   </intent-filter>
+    <intent-filter>
+    <action name="android.intent.action.VIEW" />
+    <scheme name="intent" />
+    <ssp prefix="//platformapi/startapp?.*qrcode.*alipay.*" />
+  </intent-filter>
   <intent-filter>
     <action name="android.intent.action.VIEW" />
     <scheme name="http" />
