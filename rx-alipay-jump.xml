@@ -2,12 +2,12 @@
   <intent-filter>
     <action name="android.intent.action.VIEW" />
     <scheme name="alipays" />
-    <ssp sglob="//platformapi/startapp?.*qrcode.*" />
+    <ssp prefix="//platformapi/startapp?" />
   </intent-filter>
     <intent-filter>
     <action name="android.intent.action.VIEW" />
     <scheme name="intent" />
-    <ssp sglob="//platformapi/startapp?.*qrcode.*alipay.*" />
+    <ssp sglob="//platformapi/startapp?.*alipay.*" />
   </intent-filter>
   <intent-filter>
     <action name="android.intent.action.VIEW" />
