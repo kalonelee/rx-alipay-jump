@@ -1,0 +1,12 @@
+<prescription xmlns="http://greenify.github.io/schemas/prescription/v3" type="activity" sender="other">
+  <intent-filter>
+    <action name="android.intent.action.VIEW" />
+    <scheme name="alipays" />
+    <ssp prefix="//platformapi/startapp?.*qrcode.*" />
+  </intent-filter>
+  <intent-filter>
+    <action name="android.intent.action.VIEW" />
+    <scheme name="http" />
+    <ssp sglob="//qr.alipay.com/.*" />
+  </intent-filter>
+</prescription>
