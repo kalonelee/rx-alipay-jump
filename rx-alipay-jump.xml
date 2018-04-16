@@ -4,7 +4,6 @@
 			<action name="android.intent.action.VIEW" />
 			<scheme name="alipays" />
 			<cat name="android.intent.category.BROWSABLE" />
-			<ssp prefix="//platformapi/startapp?" />
 		</intent-filter>
 	</prescription>
   
