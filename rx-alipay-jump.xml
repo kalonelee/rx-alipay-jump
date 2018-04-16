@@ -1,5 +1,5 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
-	<prescription package="com.eg.android.AlipayGphone" class="com.alipay.mobile.quinox.LauncherActivity.alias" sender="other">
+	<prescription package="com.eg.android.AlipayGphone" class="com.alipay.mobile.quinox.LauncherActivity.alias" type="activity" sender="other">
 		<intent-filter>
 			<action name="android.intent.action.VIEW" />
 			<scheme name="alipays" />
