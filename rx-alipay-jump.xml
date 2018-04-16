@@ -1,27 +1,33 @@
-<prescription xmlns="http://greenify.github.io/schemas/prescription/v3" type="activity" sender="other">
-  <intent-filter>
-    <action name="android.intent.action.VIEW" />
-    <scheme name="alipays" />
-    <ssp prefix="//platformapi/startapp?" />
-  </intent-filter>
-    <intent-filter>
-    <action name="android.intent.action.VIEW" />
-    <scheme name="intent" />
-    <ssp sglob="//platformapi/startapp?.*alipay.*" />
-  </intent-filter>
-  <intent-filter>
-    <action name="android.intent.action.VIEW" />
-    <scheme name="http" />
-    <ssp sglob="//qr.alipay.com/.*" />
-  </intent-filter>
-    <intent-filter>
-    <action name="android.intent.action.VIEW" />
-    <scheme name="market" />
-    <ssp prefix="//details?id=com.eg.android.AlipayGphone" />
-  </intent-filter>
-  <intent-filter>
-    <action name="android.intent.action.VIEW" />
-    <scheme name="http" />
-    <ssp sglob="//market.android.com/.*com.eg.android.AlipayGphone.*" />
-  </intent-filter>
-</prescription>
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+	<prescription package="com.eg.android.AlipayGphone" class="com.alipay.mobile.quinox.LauncherActivity.alias" sender="other">
+		<intent-filter>
+			<action name="android.intent.action.VIEW" />
+			<scheme name="alipays" />
+			<cat name="android.intent.category.BROWSABLE" />
+			<ssp prefix="//platformapi/startapp?" />
+		</intent-filter>
+	</prescription>
+  
+	<prescription type="activity" sender="other">
+		<intent-filter>
+			<action name="android.intent.action.VIEW" />
+			<scheme name="intent" />
+			<ssp sglob="//platformapi/startapp?.*alipay.*" />
+		</intent-filter>
+		<intent-filter>
+			<action name="android.intent.action.VIEW" />
+			<scheme name="http" />
+			<ssp sglob="//qr.alipay.com/.*" />
+		</intent-filter>
+		<intent-filter>
+			<action name="android.intent.action.VIEW" />
+			<scheme name="market" />
+			<ssp prefix="//details?id=com.eg.android.AlipayGphone" />
+		</intent-filter>
+		<intent-filter>
+			<action name="android.intent.action.VIEW" />
+			<scheme name="http" />
+			<ssp sglob="//market.android.com/.*com.eg.android.AlipayGphone.*" />
+		</intent-filter>
+	</prescription>
+</prescriptions>
