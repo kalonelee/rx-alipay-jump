@@ -9,4 +9,14 @@
     <scheme name="http" />
     <ssp sglob="//qr.alipay.com/.*" />
   </intent-filter>
+    <intent-filter>
+    <action name="android.intent.action.VIEW" />
+    <scheme name="market" />
+    <ssp prefix="//details?id=com.eg.android.AlipayGphone" />
+  </intent-filter>
+  <intent-filter>
+    <action name="android.intent.action.VIEW" />
+    <scheme name="http" />
+    <ssp sglob="//market.android.com/.*com.eg.android.AlipayGphone.*" />
+  </intent-filter>
 </prescription>
